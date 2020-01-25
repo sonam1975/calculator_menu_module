@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "",
+  "description": "",
+  "author": "",
+  "license": "",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "rebuildDatabase": "mysql -u root < schema.sql",
+    "seedDatabase": "npx knex seed:run --env development",
+    "startServer": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "knex": "^0.20.8",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "jest": "^25.1.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
