@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SubApp from './test.jsx'
 
 class App extends React.Component {
   constructor() {
@@ -10,11 +9,14 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>Hello World!</div>
-        <SubApp/>
+        <div>
+          <h1>Hello World!</h1>
+        </div>
       </div>
     );
   }
 }
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+// ReactDOM.render(<App/>, document.getElementById('app'));
+
+export default App; 
