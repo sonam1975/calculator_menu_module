@@ -1,12 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CarouselMain from '../carousel/carouselMain'
-
-let wrapper; 
-
-beforeEach(() => {
-  wrapper = shallow(<CarouselMain/>)
-});
+import CalculatorLegend from '../calculator/calculatorLegend.jsx'
 
 describe('placeholder', () => {
   it('should pass', () => {

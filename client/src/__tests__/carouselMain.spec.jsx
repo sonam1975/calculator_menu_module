@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import CarouselMain from '../carousel/carouselMain'
+import CarouselMain from '../carousel/carouselMain.jsx';
 
 let wrapper; 
 
@@ -8,8 +8,8 @@ beforeEach(() => {
   wrapper = shallow(<CarouselMain/>)
 });
 
-describe('placeholder', () => {
-  it('should pass', () => {
+describe('Validate arrow functionality', () => {
+  it('should move left', () => {
     expect(true).toBe(true); 
   })
 });

@@ -41,3 +41,10 @@ CREATE TABLE insurance (
   PRIMARY KEY(insuranceId),
   FOREIGN KEY(stateId) REFERENCES states(id)
 );
+
+CREATE TABLE bankRates (
+  bankRateId INT NOT NULL AUTO_INCREMENT,
+  bankName VARCHAR(100) NOT NULL,
+  bankRate FLOAT NOT NULL,
+  PRIMARY KEY(bankRateId)
+);

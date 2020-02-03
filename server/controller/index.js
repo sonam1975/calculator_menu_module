@@ -17,6 +17,18 @@ module.exports = {
     },
     post : (req, res) => {}
   },
+  bank : {
+    get : (req, res) => {
+      models.bank.get((err, data) => {
+        if (err) {
+          res.send(200);
+        } else {
+          res.send(data);
+        }
+      });
+    },
+    post : (req, res) => {}    
+  },
   insurance : {
     get : (req, res) => {},
     post : (req, res) => {}
