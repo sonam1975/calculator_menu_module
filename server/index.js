@@ -16,4 +16,6 @@ app.get('/', (req, res) => {
 
 app.get('/homes', controller.homes.get);
 
+app.get('/bank', controller.bank.get);
+
 app.listen(port, () => {console.log(`Listening on port: ${port}`)});
