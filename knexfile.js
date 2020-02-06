@@ -1,12 +1,12 @@
 module.exports = {
   development: {
     client: "mysql",
-    connection: { 
+    connection: {
       user: "root",
       database: "MortgageCalculator"
     },
     seeds: {
       directory: __dirname + "/seeds"
     }
-  },
+  }
 };
