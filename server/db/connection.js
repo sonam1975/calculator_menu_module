@@ -2,7 +2,7 @@ var mysql = require('mysql');
 var Promise = require('bluebird');
 
 var db = mysql.createConnection({
-  user: 'root'@'localhost',
+  user: 'root',
   database: 'MortgageCalculator',
   password: 'MyNewPass4!'
 });
